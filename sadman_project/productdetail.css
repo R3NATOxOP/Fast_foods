@@ -177,7 +177,6 @@
 		}
 		input{
 			height:34px;
-      width: 100px;
       text-align: center;
       font-size: 26px;
 			border:1px solid #ddd;
@@ -187,6 +186,7 @@
     }
 
   /*   cart done */
+  
 .product-detail .div-wrapper {
   position: absolute;
   width: 46px;

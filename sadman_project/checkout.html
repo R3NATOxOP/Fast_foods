@@ -1,232 +1,186 @@
 <!DOCTYPE html>
-<html lang="english">
+<html lang="en">
   <head>
-    <title>exported project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <script src="./cart.js"></script>
+    
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./checkout.css" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet"
+        />
   </head>
+  
   <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./index.css" rel="stylesheet" />
+     <!-- header selection section start ====================================================  -->
+     <section id="header-section2-content">
+      <div id="header-section2-left">
+          <a href="index.html">
+              <img style="height: 75px" src="images/food-delivery-logo.png" />
+          </a>
+      </div>
+      <div id="header-section2-middle-1">
+          <nav>
+              <ul>
+                  <a class="menu-item" href="index.html"> <li>Home</li> </a>
+                  <a class="menu-item" href="projects.html"> <li>Products</li> </a>
+                  <a class="menu-item" href="contact.html"> <li>Contact</li> </a>
+              </ul>
+          </nav>
+      </div>
+      <div id="header-section2-middle-2">
+          <input
+              id="search-field"
+              type="text"
+              placeholder="search your foods..."
+              />
+      </div>
 
-      <div class="payment-container">
-        <div class="payment-payment">
-          <img
-            src="public/external/rectangle101055-cuth-200h.png"
-            alt="Rectangle101055"
-            class="payment-rectangle10"
-          />
-          <span class="payment-text">
-            <span class="payment-text01">HOME / SHOPPING CART /</span>
-            <span class="payment-text02">CHECKOUT</span>
-          </span>
-          <div class="payment-group64">
-            <img
-              src="public/external/rectangle181055-b1qj.svg"
-              alt="Rectangle181055"
-              class="payment-rectangle18"
-            />
-            <span class="payment-text03"><span>Delivery Address</span></span>
-            <span class="payment-text05">
-              <span>Select Your Payment Type</span>
-            </span>
-            <span class="payment-text07"><span>Address Line 1</span></span>
-            <span class="payment-text09"><span>Address Line 2</span></span>
-            <span class="payment-text11"><span>Postal Code</span></span>
-            <span class="payment-text13"><span>Contact Number</span></span>
-            <span class="payment-text15"><span>Email address</span></span>
-            <span class="payment-text17"><span>Grand Total</span></span>
-            <span class="payment-text19"><span>Kr 188.00</span></span>
-            <div class="payment-group28">
-              <span class="payment-text21">
-                <span>enter your address line 1</span>
-              </span>
-            </div>
-            <div class="payment-group29">
-              <span class="payment-text23">
-                <span>enter your address line 2</span>
-              </span>
-            </div>
-            <div class="payment-group30">
-              <span class="payment-text25">
-                <span>enter your postal code</span>
-              </span>
-            </div>
-            <div class="payment-group31">
-              <span class="payment-text27">
-                <span>enter your contact number</span>
-              </span>
-            </div>
-            <div class="payment-group32">
-              <span class="payment-text29">
-                <span>enter your email address</span>
-              </span>
-            </div>
-            <div class="payment-group33">
-              <img
-                src="public/external/rectangle21055-8fnol-200w.png"
-                alt="Rectangle21055"
-                class="payment-rectangle2"
-              />
-              <span class="payment-text31">
-                <span>
-                  <span>Online</span>
-                  <br />
-                  <span>Payment</span>
-                </span>
-              </span>
-            </div>
-            <div class="payment-group34">
-              <img
-                src="public/external/rectangle21055-fy5jh-200h.png"
-                alt="Rectangle21055"
-                class="payment-rectangle21"
-              />
-              <span class="payment-text36">
-                <span>
-                  <span>Cash On</span>
-                  <br />
-                  <span>Delivery</span>
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="payment-group35">
-            <span class="payment-text41"><span>CHECK OUT</span></span>
-          </div>
-          <span class="payment-text43">
-            <span>Add your delivery details</span>
-          </span>
-          <span class="payment-text45">
-            <span>
-              Out delivery partners delivery your order to your door step. So
-              please add your correct delivery details before checkout your
-              order.
-            </span>
-          </span>
-          <div class="payment-footer">
-            <div class="payment-footer1">
-              <span class="payment-text47"><span>Hot-line</span></span>
-              <span class="payment-text49"><span>Our Address</span></span>
-              <span class="payment-text51"><span>+46 710000000</span></span>
-              <span class="payment-text53">
-                <span>
-                  <span>No 2255, Ekhagenshringen,</span>
-                  <br />
-                  <span>Sweden</span>
-                </span>
-              </span>
-              <span class="payment-text58"><span>Home</span></span>
-              <span class="payment-text60"><span>Products</span></span>
-              <span class="payment-text62"><span>Contact Us</span></span>
-            </div>
-            <img
-              src="public/external/rectangle291821-gtwe-200h.png"
-              alt="Rectangle291821"
-              class="payment-rectangle29"
-            />
-            <img
-              src="public/external/rectangle301821-mf66-300w.png"
-              alt="Rectangle301821"
-              class="payment-rectangle30"
-            />
-          </div>
-          <div class="payment-header">
-            <div class="payment-header1">
-              <div class="payment-header2">
-                <img
-                  src="public/external/rectangle11821-5ude-300h.png"
-                  alt="Rectangle11821"
-                  class="payment-rectangle1"
-                />
-                <span class="payment-text64"><span>Home</span></span>
-                <span class="payment-text66">
-                  <span>We are operating 9:00 AM - 10:00 PM</span>
-                </span>
-                <span class="payment-text68"><span>Products</span></span>
-                <span class="payment-text70"><span>Contact Us</span></span>
-                <img
-                  src="public/external/rectangle21821-j4ya-200h.png"
-                  alt="Rectangle21821"
-                  class="payment-rectangle22"
-                />
-                <img
-                  src="public/external/line51821-f61j.svg"
-                  alt="Line51821"
-                  class="payment-line5"
-                />
+      <div id="header-section2-middle-3">
+          <a href="#">
+              <img class="menu-icon-images" src="images/account.png"
+                   /></a>
+          <a href="cart.html">
+              <img class="menu-icon-images" src="images/cart.png"
+                   /></a>
+      </div>
+  </section>
+  <section id="header-section-content">
+      <div id="header-section-left"></div>
+      <div id="header-section-middle-1">
+          <p style="font-size: 16px">
+              <img style="height: 14px" src="images/clock.png" /> We are operating
+              <span style="color: #ff6415">9:00 AM - 10:00 PM </span>
+          </p>
+      </div>
+      <div id="header-section-middle-2">
+          <br />
+          <a href="#">
+              <img style="height: 25px" src="images/social-media-icons.png" />
+          </a>
+      </div>
+  </section>
+
+  <!-- header selection section end ====================================================   -->
+   <main>
+    <div class="payment">
+      <div class="div">
+        <div class="overlap">
+          <p class="HOME-SHOPPING-CART">
+            <span class="text-wrapper">HOME / SHOPPING CART / </span>
+            <span class="span">CHECKOUT</span>
+            <span class="text-wrapper">&nbsp;</span>
+          </p>
+        </div>
+        <div class="overlap-group">
+          <div class="frame">
+            <div class="overlap-group-2">
+              <div class="text-wrapper-2">Delivery Address</div>
+              <div class="text-wrapper-3">Select Your Payment Type</div>
+              <div class="overlap-2">
+                <div class="text-wrapper-4">Address Line 1</div>
+                <div class="div-wrapper"><p class="text-wrapper-5">enter your address line 1</p></div>
               </div>
-              <img
-                src="public/external/rectangle41821-icsk-200h.png"
-                alt="Rectangle41821"
-                class="payment-rectangle4"
-              />
-              <span class="payment-text72">
-                <span>search your favorite foods...</span>
-              </span>
-              <img
-                src="public/external/frame1821-f6sg.svg"
-                alt="Frame1821"
-                class="payment-frame"
-              />
+              <div class="overlap-3">
+                <div class="text-wrapper-6">Address Line 2</div>
+                <div class="div-wrapper"><p class="text-wrapper-5">enter your address line 2</p></div>
+              </div>
+              <div class="overlap-4">
+                <div class="text-wrapper-7">Postal Code</div>
+                <div class="div-wrapper"><div class="text-wrapper-5">enter your postal code</div></div>
+              </div>
+              <div class="overlap-5">
+                <div class="text-wrapper-8">Contact Number</div>
+                <div class="div-wrapper"><div class="text-wrapper-5">enter your contact number</div></div>
+              </div>
+              <div class="overlap-6">
+                <div class="text-wrapper-8">Email address</div>
+                <div class="div-wrapper"><div class="text-wrapper-5">enter your email address</div></div>
+              </div>
+              <div class="text-wrapper-9">Grand Total</div>
+              <div class="text-wrapper-10">Kr 188.00</div>
+              <div class="frame-2">
+                <img class="rectangle" src="img/card.png" />
+                <div class="online-payment">Online <br />Payment</div>
+              </div>
+              <div class="frame-3">
+                <img class="img" src="images/cash.png" />
+                <div class="cash-on-delivery">Cash On <br />Delivery</div>
+              </div>
             </div>
-            <img
-              src="public/external/rectangle281821-5lbtk-200h.png"
-              alt="Rectangle281821"
-              class="payment-rectangle28"
-            />
-            <img
-              src="public/external/frame1821-mbs.svg"
-              alt="Frame1821"
-              class="payment-frame1"
-            />
-            <img
-              src="public/external/frame1821-56i9.svg"
-              alt="Frame1821"
-              class="payment-frame2"
-            />
           </div>
+          <div class="frame-4"><div class="text-wrapper-11">CHECK OUT</div></div>
+        </div>
+        <div class="overlap-7">
+          <div class="text-wrapper-12">Add your delivery details</div>
+          <p class="p">
+            Out delivery partners delivery your order to your door step. So please add your correct delivery details
+            before checkout your order.
+          </p>
         </div>
       </div>
     </div>
+   </main>
   </body>
+ 
+  <!-- footer section start ====================================================  -->
+ <footer>
+  <section id="footer-section-content">
+      <div id="footer-section-left"></div>
+      <div id="footer-section-middle-0">
+          <p class="footer-labels">
+              <img style="height: 18px" src="images/map-location.png" /> No 2255,
+              Ekhagenshringen, Sweden
+          </p>
+      </div>
+      <div id="footer-section-middle-1">
+          <p class="footer-labels">
+              <img style="height: 18px" src="images/call-us.png" />
+              +94 77 648 5039
+          </p>
+      </div>
+      <div id="footer-section-middle-2">
+          <br />
+          <a href="#">
+              <img style="height: 25px" src="images/social-media-icons.png" />
+          </a>
+      </div>
+  </section>
+
+  <section id="footer-section2-content">
+      <div id="footer-section2-left">
+          <a href="index.html">
+              <img style="height: 75px" src="images/footer-logo.png" />
+          </a>
+      </div>
+      <div id="footer-section2-middle-1">
+          <ul>
+              <a class="footer-menu-item" href="index.html">
+                  <li>Home</li>
+              </a>
+              <a class="footer-menu-item" href="projects.html">
+                  <li>Products</li>
+              </a>
+              <a class="footer-menu-item" href="contact.html">
+                  <li>Contact</li>
+              </a>
+          </ul>
+      </div>
+      <div id="footer-section2-middle-2">
+          <p id="footer-label">Designed by: Group 30</p>
+      </div>
+
+      <div id="footer-section2-middle-3"></div>
+  </section>
+</footer>
+
+<!-- footer section end ====================================================  -->
 </html>
