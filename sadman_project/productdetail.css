@@ -1,3 +1,7 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
 .product-detail {
   display: flex;
   flex-direction: column;
@@ -44,7 +48,6 @@
   width: 1061px;
   height: 41px;
   margin-top: -1px;
-  font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 25px;
@@ -54,7 +57,6 @@
 }
 
 .product-detail .text-wrapper {
-  font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 25px;
@@ -62,7 +64,6 @@
 }
 
 .product-detail .span {
-  font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
 }
 
@@ -110,7 +111,6 @@
   width: 691px;
   top: -1px;
   left: 1px;
-  font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
   font-size: 30px;
@@ -124,7 +124,6 @@
   width: 560px;
   top: 58px;
   left: 0;
-  font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
   color: #6a6666;
   font-size: 21px;
@@ -137,7 +136,6 @@
   width: 542px;
   top: 280px;
   left: 0;
-  font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #6a6666;
   font-size: 23px;
@@ -150,7 +148,6 @@
   width: 542px;
   top: 200px;
   left: 1px;
-  font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
   font-size: 23px;
@@ -221,12 +218,11 @@
   border-radius: 40px;
 }
 
-.product-detail .text-wrapper-7 {
+.product-detail .text-wrapper-5 {
   position: absolute;
   width: 288px;
   top: 14px;
   left: 0;
-  font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 23px;
@@ -246,12 +242,11 @@
   left: 0;
 }
 
-.product-detail .text-wrapper-8 {
+.product-detail .text-wrapper-6 {
   position: relative;
   width: 453px;
   height: 35px;
   margin-top: -1px;
-  font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 26px;
@@ -300,7 +295,6 @@
   position: relative;
   width: 240px;
   height: 50px;
-  font-family: "Inter-Bold", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 22px;
@@ -309,20 +303,10 @@
   line-height: normal;
 }
 
-.product-detail .text-wrapper-9 {
-  font-weight: 700;
-}
-
-.product-detail .text-wrapper-10 {
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 19px;
-}
-
 .product-detail .div-2 {
   position: relative;
   width: 240px;
   height: 50px;
-  font-family: "Inter-Bold", Helvetica;
   font-weight: 400;
   color: #ff6415;
   font-size: 22px;
@@ -331,23 +315,20 @@
   line-height: normal;
 }
 
-.product-detail .text-wrapper-11 {
+.product-detail .text-wrapper-7 {
   font-weight: 700;
   color: #000000;
 }
 
-.product-detail .text-wrapper-12 {
-  font-family: "Inter-Regular", Helvetica;
+.product-detail .text-wrapper-8 {
   color: #000000;
   font-size: 19px;
 }
 
-.product-detail .single-product-2 {
-  display: flex;
-  flex-direction: column;
-  width: 240px;
-  height: 298px;
-  align-items: center;
-  gap: 8px;
-  position: relative;
-}
+/* a:link, a:visited {
+  color: #ff6415;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+} */
