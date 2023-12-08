@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./footer.css" />
-    <link rel="stylesheet" href="./productdetail.css" />
+    <link rel="stylesheet" href="./checkout.css" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,85 +70,65 @@
   </section>
 
   <!-- header selection section end ====================================================   -->
-   
-    <main>
-      <div class="product-detail">
-        <div class="frame">
-          <div class="div"></div>
-          <div class="HOME-CHINESE-FOODS-wrapper">
-            <p class="HOME-CHINESE-FOODS">
-              <span class="text-wrapper">HOME / CHINESE FOODS / </span> <span class="span">CHOCOLATE CHERRY GATEAUX</span>
-            </p>
-          </div>
+   <main>
+    <div class="payment">
+      <div class="div">
+        <div class="overlap">
+          <p class="HOME-SHOPPING-CART">
+            <span class="text-wrapper">HOME / SHOPPING CART / </span>
+            <span class="span">CHECKOUT</span>
+            <span class="text-wrapper">&nbsp;</span>
+          </p>
         </div>
-        <div class="frame-2">
-          <div class="frame-wrapper">
-            <div class="frame-3">
-              <img class="rectangle" src="images/products/p1.png" />
-              <div class="frame-4">
-                <div class="text-wrapper-2">Chocolate Cherry Gateaux</div>
-                <p class="p">
-                  This is the product details. This is the product details. This is how the details of the product is
-                  displayed. This is the product details. This is the full description of the product.
-                </p>
-                <div class="text-wrapper-3">Select Quantity</div>
-                <div class="text-wrapper-4">99 Kr</div>
-                <div class="number">
-                  <span class="minus">-</span>
-                  <input type="text" value="1"/>
-                  <span class="plus">+</span>
-                </div>
-                <div class="overlap-2">
-                  <div class="rectangle-2"></div>
-                  <div class="text-wrapper-5"><a href="danton_project/product.html">ADD TO CART</a></div>
-                </div>
+        <div class="overlap-group">
+          <div class="frame">
+            <div class="overlap-group-2">
+              <div class="text-wrapper-2">Delivery Address</div>
+              <div class="text-wrapper-3">Select Your Payment Type</div>
+              <div class="overlap-2">
+                <div class="text-wrapper-4">Address Line 1</div>
+                <div class="div-wrapper"><p class="text-wrapper-5"><input type="text" id="adr" name="address" placeholder="542 W. 15th Street"></p></div>
+              </div>
+              <div class="overlap-3">
+                <div class="text-wrapper-6">City</div>
+                <div class="div-wrapper"><p class="text-wrapper-5"></p><input type="text" id="adr2" name="town" placeholder="Post Town"></p></div>
+              </div>
+              <div class="overlap-4">
+                <div class="text-wrapper-7">Postal Code</div>
+                <div class="div-wrapper"><div class="text-wrapper-5"><input type="text" id="zip" name="zip" placeholder="2255"></div></div>
+              </div>
+              <div class="overlap-5">
+                <div class="text-wrapper-8">Contact Number</div>
+                <div class="div-wrapper"><div class="text-wrapper-5"><input type="text" id="phn" name="phone" placeholder="07********"></div></div>
+              </div>
+              <div class="overlap-6">
+                <div class="text-wrapper-8">Email address</div>
+                <div class="div-wrapper"><div class="text-wrapper-5"><input type="text" id="email" name="email" placeholder="john@example.com"></div></div>
+              </div>
+              <div class="text-wrapper-9">Grand Total</div>
+              <div class="text-wrapper-10">Kr 188.00</div>
+              <div class="frame-2">
+                <img class="rectangle" src="images/card.png" />
+                <div class="online-payment"><input type="radio" id="card" name="fav_language" value="Card Payment">Online <br />Payment</div>
+              </div>
+              <div class="frame-3">
+                <img class="img" src="images/cash.png" />
+                <div class="cash-on-delivery"><input type="radio" id="cash" name="fav_language" value="Card Payment">Cash On <br />Delivery</div>
               </div>
             </div>
           </div>
-          <div class="frame-6"><p class="text-wrapper-6">YOU WILL LIKE THESE FOODS ALSO</p></div>
-          <div class="frame-7">
-            <div class="frame-8">
-              <div class="single-product">
-                <p class="dumplings-kr">
-                  <img class="img" src="images/products/p2.png" />
-                  <span class="text-wrapper-7"><a href="danton_project/product.html">Dumplings</a><br /></span> <span class="text-wrapper-12">110 Kr</span> 
-                </p>
-              </div>
-              <div class="single-product">
-                <p class="div-2">
-                  <img class="img" src="images/products/p3.png" />
-                  <span class="text-wrapper-7"><a href="danton_project/product.html">Dumplings</a><br /></span> <span class="text-wrapper-12">119 Kr</span>
-                </p>
-              </div>
-              <div class="single-product">
-                <p class="div-2">
-                  <img class="img" src="images/products/p4.png" />
-                  <span class="text-wrapper-7"><a href="danton_project/product.html">Dumplings</a><br /></span> <span class="text-wrapper-12">109 Kr</span>
-                </p>
-              </div>
-              <div class="single-product">
-                <p class="div-2">
-                  <img class="img" src="images/products/p5.png" />
-                  <span class="text-wrapper-7"><a href="danton_project/product.html">Dumplings</a><br /></span> <span class="text-wrapper-12">130 Kr</span>
-                </p>
-              </div>
-              <div class="single-product">
-                <p class="div-2">
-                  <img class="img" src="images/products/p6.png" />
-                  <span class="text-wrapper-7"><a href="danton_project/product.html">Dumplings</a><br /></span> <span class="text-wrapper-12">149 Kr</span>
-                </p>
-              </div>
-              <div class="single-product">
-                <p class="div-2">
-                  <img class="img" src="images/products/p7.png" />
-                  <span class="text-wrapper-7">   <br /></span> <span class="text-wrapper-12">159 Kr</span>
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="frame-4"><div class="text-wrapper-11"><a href="danton_project/product.html">CHECK OUT</a></div></div>
+        </div>
+        <div class="overlap-7">
+          <div class="text-wrapper-12">Add your delivery details</div>
+          <p class="p">
+            Out delivery partners delivery your order to your door step. So please add your correct delivery details
+            before checkout your order.
+          </p>
         </div>
       </div>
-    </main>
+    </div>
+   </main>
   </body>
  
   <!-- footer section start ====================================================  -->
