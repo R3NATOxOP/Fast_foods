@@ -1,3 +1,9 @@
+.square {
+  height: 50px;
+  width: 1500px;
+  background-color: #555;
+}
+
 .productdetail-container {
   width: 100%;
   display: flex;
